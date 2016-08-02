@@ -111,7 +111,7 @@ function highlightShortcut(tag)
 {
     if ($(tag).attr("hilight_shortcut") === "true" && $(tag).attr("shortcut") === "true")
     {
-        $('.nav').find("li>a").each(function() {
+        $('.dropdown-menu').find("li>a").each(function() {
             var given_key = $(this).attr("shortcut_key");
             if (given_key !== undefined)
             {
