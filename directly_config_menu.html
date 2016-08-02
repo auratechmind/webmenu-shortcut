@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+     <script src="js\dynamic_click.js"></script>
+ <script src="js\jquery.shortcuts.js"></script>
+<script src="js\jquery.shortcuts.min.js"></script>
+  <script type="text/javascript">
+//call method for placing shortcut
+                        $(function() {
+                                $( "#main_div" ).placeShortcut({
+
+                               });
+
+                        });
+
+		</script>
+                <style>
+                    .hilight
+                    {
+                        text-decoration: underline;
+                    }
+                    .dropdown-menu
+                    {
+                        width: 213px !important;
+                    }
+					.active{
+                background: #222222;
+                color:#FFFFFF!important;
+                box-shadow: inset 0px 0px 2px #DDD;
+
+            }
+            .active .light-dark
+            {
+                color:#FFFFFF!important;
+            }
+                </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+   <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="new_menu.html">Menu Shortcut</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+    <ul class="nav navbar-nav" id="main_div" shortcut="true" display_shortcut="true" hilight_shortcut="true">
+      <li  class="active"  ><a href="#" shortcut_key="ctrl+a" >Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" shortcut_key="ctrl+g">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#1-1" shortcut_key="ctrl+alt+shift+a" >Page 1-1b </a></li>
+          <li><a href="#1-2" shortcut_key="shift+alt+q" >Page 1-2 </a></li>
+          <li><a href="#1-3" shortcut_key="ctrl+shift+a" >Page 1-3 </a></li>
+        </ul>
+      </li>
+      <a href="#" shortcut_key="ctrl+q" ></a>
+      <li><a href="#" shortcut_key="ctrl+e" >Page 2</a></li>
+      <li><a href="#" shortcut_key="ctrl+f" >Page 3</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding:40px 20px;margin-top:30px;height:600px;">
+  <h3>Home</h3>
+  <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>
+</div>
+<div id="1-1" class="container" style="padding:40px 20px;margin-top:30px;height:600px;">
+  <h3>Page 1-1b</h3>
+  <p>Theme unit test data is an XML data file that contains dummy content for WordPress theme development. It is used by WordPress theme developers to test their themes. It is also used by WordPress theme review team to test the themes for inclusion in WordPress theme directory.</p>
+</div>
+    <div id="1-2" class="container" style="padding:40px 20px;margin-top:30px;height:600px;">
+  <h3>Page 1-2</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices bibendum mollis. Sed aliquet, enim at vulputate porttitor, felis nunc vehicula ante, blandit lobortis mi massa non leo. Sed dui enim, interdum non rhoncus vitae, blandit eu eros. Nulla facilisi.</p>
+</div>
+    <div id="1-3" class="container" style="padding:40px 20px;margin-top:30px;height:600px;">
+  <h3>Page 1-3</h3>
+  <p>Life. Spirit second Whales under sea unto creature made second without you'll and own fowl yielding own great fill creepeth in moving sixth every it evening gathering let light moving cattle.</p>
+</div>
+</body>
+</html>
+
