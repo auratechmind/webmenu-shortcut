@@ -1,6 +1,6 @@
 # webmenu-shortcut
 It is used when you want to operate menu bar using keyboard.
-It is basically developed in angular js.
+It is basically developed in javascript.
 ###How to use ?
  - Add menu_bind_functionality.js in your page.
 There are two ways to use :
